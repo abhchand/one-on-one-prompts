@@ -1,3 +1,6 @@
+a, a:visited {
+  color:  yellow;
+}
 ul,li {
   list-style-type: none;
   list-style-position:inside;
@@ -71,7 +74,6 @@ body {
   justify-content: center;
   margin: 50px auto;
 }
-
 .mobile button {
   background-color: #888;
   border-radius: 8px;
@@ -82,13 +84,17 @@ body {
   color: white;
   cursor: pointer;
 }
-
 .monospaced {
   padding: 2px 4px;
   color: #c7254e;
   font-size: 90%;
   background-color: #333;
   border-radius: 4px;
+}
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
 }
 
 @media screen and (max-width: 500px) {
