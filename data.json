@@ -1,0 +1,75 @@
+{
+  "categories": {
+    "Self Care": {
+      "hex": "9B5DE5",
+      "prompts": [
+        "What are you proud of in the last week?",
+        {
+          "i": [
+            "How do you handle low morale on the team?",
+            "How can you tell when morale improves?"
+          ],
+          "a": "abhchand"
+        },
+        {
+          "i": "How do you feel about your meeting to work ratio this week?",
+          "a": "abhchand"
+        },
+        "How are you feeling about your work/life balance right now?"
+      ]
+    },
+    "Leadership": {
+      "hex": "F15BB5",
+      "prompts": [
+      ]
+    },
+    "Skills": {
+      "hex": "FEE440",
+      "prompts": [
+      ]
+    },
+    "Roadblocks and Challenges": {
+      "hex": "00BBF9",
+      "prompts": [
+        "What’s your greatest concern about the company right now?",
+        "Is there anything slowing you down right now?"
+      ]
+    },
+    "Growth and Experience": {
+      "hex": "00CCB1",
+      "prompts": [
+        {
+          "i": [
+            "Tell me about a time you received feedback you didn't agree with.",
+            "How did you navigate it?",
+            "What would you do differently next time?"
+          ],
+          "credit": "abhchand"
+        },
+        {
+          "i": [
+            "Are there any skills you would like to improve?",
+            "How can I help you improve them?"
+          ]
+        },
+        "What way do you learn best?"
+      ]
+    },
+    "Career / Future": {
+      "hex": "C5BBF2",
+      "prompts": [
+        "What are your priorities for next week?",
+        "What is your dream role?",
+        "Is there one area you’d like more feedback on?"
+      ]
+    },
+    "Collaboration & Teams": {
+      "hex": "FF8811",
+      "prompts": [
+        "Tell me about a time you felt really appreciated at work",
+        "Have you worked with any other teams recently?"
+      ]
+    }
+  }
+}
+
