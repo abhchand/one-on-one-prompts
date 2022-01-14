@@ -4,29 +4,18 @@
       "hex": "9B5DE5",
       "prompts": [
         "What are you proud of in the last week?",
-        {
-          "i": [
-            "How do you handle low morale on the team?",
-            "How can you tell when morale improves?"
-          ],
-          "a": "abhchand"
-        },
-        {
-          "i": "How do you feel about your meeting to work ratio this week?",
-          "a": "abhchand"
-        },
+        { "i": ["How do you handle low morale on the team?", "How can you tell when morale improves?"], "a": "abhchand" },
+        { "i": "How do you feel about your meeting to work ratio this week?", "a": "abhchand" },
         "How are you feeling about your work/life balance right now?"
       ]
     },
     "Leadership": {
       "hex": "F15BB5",
-      "prompts": [
-      ]
+      "prompts": []
     },
     "Skills": {
       "hex": "FEE440",
-      "prompts": [
-      ]
+      "prompts": []
     },
     "Roadblocks and Challenges": {
       "hex": "00BBF9",
@@ -38,20 +27,8 @@
     "Growth and Experience": {
       "hex": "00CCB1",
       "prompts": [
-        {
-          "i": [
-            "Tell me about a time you received feedback you didn't agree with.",
-            "How did you navigate it?",
-            "What would you do differently next time?"
-          ],
-          "credit": "abhchand"
-        },
-        {
-          "i": [
-            "Are there any skills you would like to improve?",
-            "How can I help you improve them?"
-          ]
-        },
+        { "i": ["Tell me about a time you received feedback you didn't agree with.", "How did you navigate it?", "What would you do differently next time?"], "a": "abhchand" },
+        { "i": ["Are there any skills you would like to improve?","How can I help you improve them?"] },
         "What way do you learn best?"
       ]
     },
@@ -72,4 +49,3 @@
     }
   }
 }
-
