@@ -22,7 +22,6 @@ body {
   max-width: 350px;
   height: 500px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px #444;
   overflow: hidden;
   margin: 50px auto;
 }
