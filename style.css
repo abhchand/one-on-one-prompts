@@ -91,7 +91,7 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 500px) {
   .instructions {
     display: none;
   }
