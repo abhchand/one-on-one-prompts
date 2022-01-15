@@ -1,6 +1,18 @@
-# 1:1 Prompts
+<div align="center">
+  <h1>1:1 Prompts</h1>
 
-Prompts for managers to use in 1:1's.
+  <a href="https://github.com/abhchand/one-on-one-prompts">
+    <img
+      width="100"
+      alt="logo"
+      src="https://raw.githubusercontent.com/abhchand/one-on-one-prompts/main/logo.jpeg"
+    />
+  </a>
+
+  <p>Prompts for managers to use in 1:1's.</p>
+</div>
+
+---
 
 https://abhchand.me/one-on-one-prompts/
 
