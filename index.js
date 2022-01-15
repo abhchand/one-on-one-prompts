@@ -1,21 +1,34 @@
-let data, isLoaded = false;
+let curPromptIdx,
+  data,
+  isLoaded = false,
+  prompts = [];
 
 const keyCodes = Object.freeze({
   SPACEBAR: 32
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Fetch data
+  // Fetch and Load data
   fetch("data.json")
     .then(response => response.json())
     .then(json => data = json)
-    .then(() => isLoaded = true)
-    .then(() => shuffle());
+    .then(() => {
+      Object.keys(data.categories).forEach(category => {
+        data.categories[category].prompts.forEach(json => {
+          prompts.push(new Prompt(json, category));
+        })
+      });
+
+      shuffleDeck();
+      curPromptIdx = -1;
+      isLoaded = true;
+      nextCard()
+    });
 
   // Listen for key presses
   document.body.addEventListener("keypress", (e) => {
     if(isLoaded && parseKeyCode(e) == keyCodes.SPACEBAR) {
-      shuffle();
+      nextCard();
     }
   })
 });
@@ -23,18 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 /*
  * Core Methods
  */
+const nextCard = () => {
+  curPromptIdx++;
+  const nextPrompt = prompts[curPromptIdx];
 
-const randomPrompt = () => {
-  let category, json;
-
-  do {
-    category = randFrom(Object.keys(data.categories));
-
-    const prompts = (data.categories[category] || {}).prompts || [];
-    json = randFrom(prompts);
-  } while(!json)
-
-  return new Prompt(json, category);
+  renderCard(nextPrompt);
 }
 
 const renderCard = (prompt) => {
@@ -106,14 +112,19 @@ const renderCard = (prompt) => {
   mount.appendChild(wrapper);
 }
 
+const shuffleDeck = () => {
+  for (let i = prompts.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [prompts[i], prompts[j]] = [prompts[j], prompts[i]];
+  }
+}
+
 
 /*
  * Helpers
  */
 
 const parseKeyCode = (event) => typeof event.which == 'number' ? event.which : event.keyCode;
-const randFrom = (array) => array[array.length * Math.random() << 0];
-const shuffle = () => renderCard(randomPrompt());
 
 /*
  * Models
