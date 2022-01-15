@@ -38,8 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 const nextCard = () => {
   curPromptIdx++;
-  const nextPrompt = prompts[curPromptIdx];
+  if (curPromptIdx >= prompts.length) {
+    curPromptIdx = 0;
+  }
 
+  const nextPrompt = prompts[curPromptIdx];
   renderCard(nextPrompt);
 }
 
