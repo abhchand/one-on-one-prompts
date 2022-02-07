@@ -21,7 +21,8 @@
       "hex": "00BBF9",
       "prompts": [
         "What’s your greatest concern about the company right now?",
-        "Is there anything slowing you down right now?"
+        "Is there anything slowing you down right now?",
+        "What am I not seeing from my perspective?"
       ]
     },
     "Growth and Experience": {
